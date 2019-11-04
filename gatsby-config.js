@@ -3,7 +3,7 @@ const env = process.env;
 
 module.exports = {
      siteMetadata: {
-         title: 'チラ裏感覚で書く技術ブログ'
+         title: 'チラ裏感覚で書くTech Blog'
      },
      plugins: [
          `gatsby-plugin-sass`,
