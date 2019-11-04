@@ -37,7 +37,7 @@ const Post = ( props ) => {
 }
 
 export const query = graphql`
-     query($slug: String!) {
+     query($slug: String) {
          contentfulBlog(slug: { eq: $slug }) {
              title
              tags

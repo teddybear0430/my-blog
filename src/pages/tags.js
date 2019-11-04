@@ -42,7 +42,7 @@ const Tag = ( props ) => {
 
 // タグに属する投稿を取得
 export const query = graphql`
-query($slug: String!) {
+query($slug: String) {
      allContentfulBlog(filter:{tags:{eq: $slug}}, sort:{fields:[createdAt], order:DESC}) {
          edges {
              node {
