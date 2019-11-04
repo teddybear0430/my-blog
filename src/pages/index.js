@@ -21,7 +21,6 @@ const IndexPage = ({ data }) => {
                              </h2>
                              <span className="date">
                                  { post.createdAt }
-                                 <FontAwesomeIcon icon={faEdit} />
                              </span>
                              { 
                                  post.tags.map((tag, i) => 
