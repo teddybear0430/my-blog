@@ -6,7 +6,6 @@
      background: $key_color3;
      border-left: 1px solid #eee;
      font-size: 0.8rem;
-     padding: 0 16px;
      @media (max-width: 980px) {
          width: 100%;
          border-left: none;
@@ -17,6 +16,9 @@
      }
      h2 {
          color: $key_color1;
+     }
+     .sidebar-container {
+         padding: 0 16px;
      }
 
      // プロフィール
