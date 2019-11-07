@@ -19,8 +19,8 @@ const Post = ( props ) => {
                 <div className="post-container">
                     <h1 className="post-title">{ post.title }</h1>
                     <span className="date">
-                    <FontAwesomeIcon icon={faEdit} />
                         { post.createdAt }
+                        <FontAwesomeIcon className="edit-icon" icon={faEdit} />
                     </span>
                     { 
                         post.tags.map((tag, i) => 

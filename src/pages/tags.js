@@ -20,8 +20,8 @@ const Tag = ( props ) => {
                     <Link to={`/posts/${post.slug}`}>{ post.title }</Link>
                     </h2>
                     <span className="date">
-                    { post.createdAt }
-                    <FontAwesomeIcon icon={faEdit} />
+                        { post.createdAt }
+                        <FontAwesomeIcon className="edit-icon" icon={faEdit} />
                     </span>
                     {
                     post.tags.map((tag, i) =>

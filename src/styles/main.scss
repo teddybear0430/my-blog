@@ -29,6 +29,13 @@ main {
         margin: 10px 0;
         color: gray;
         font-weight: 600;
+        .edit-icon {
+            width: 16px;
+            min-width: 16px;
+            height: 16px;
+            margin-left: 10px;
+            vertical-align: text-bottom;
+        }
     }
 
     // 投稿一覧
@@ -71,13 +78,6 @@ main {
         }
         .post-container {
             padding: 0.8rem;
-            .fa-w-18 {
-                width: 15px;
-                min-width: 15px;
-                height: 15px;
-                margin-left: 0px;
-                margin-right: 10px;
-            }
         }
     }
 }

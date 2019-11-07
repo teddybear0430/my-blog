@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql,Link } from 'gatsby';
 import Button from '@material-ui/core/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';	
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout.js';
 import '../styles/main.scss';
@@ -19,6 +21,7 @@ const IndexPage = ({ data }) => {
                         </h2>
                         <span className="date">
                             { post.createdAt }
+                            <FontAwesomeIcon className="edit-icon" icon={faEdit} />
                         </span>
                         { 
                             post.tags.map((tag, i) => 
