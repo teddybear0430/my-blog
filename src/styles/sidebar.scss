@@ -1,58 +1,58 @@
 @import 'variables';
 
 #sidebar {
-     position: relative;
-     width: 380px;
-     background: $key_color3;
-     border-left: 1px solid #eee;
-     font-size: 0.8rem;
-     @media (max-width: 980px) {
-         width: 100%;
-         border-left: none;
-         border-top: 1px solid #eee;
-     }
-     h2,h3 {
-         margin: 10px 0;
-     }
-     h2 {
-         color: $key_color1;
-     }
-     .sidebar-container {
-         padding: 0 16px;
-     }
+    position: relative;
+    width: 380px;
+    background: $key_color3;
+    border-left: 1px solid #eee;
+    font-size: 0.8rem;
+    @media (max-width: 980px) {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #eee;
+    }
+    h2,h3 {
+        margin: 10px 0;
+    }
+    h2 {
+        color: $key_color1;
+    }
+    .sidebar-container {
+        padding: 0 16px;
+    }
 
-     // プロフィール
-     .profile {
-         .user-icon {
-             background: url('https://images.ctfassets.net/eltkheefzhml/6yg7gaEKWciIjfuIOBCDdc/e3fefa1d20133b4b7935d31eed738c72/icon.png?h=250');
-             background-size: cover;
-             margin: 20px auto;
-             border-radius: 50%;
-             border: 2px solid #eee;
-             display: block;
-             width: 90px;
-             height: 90px;
-         }
-         ul {
-             padding-left: 15px;
-         }
-         .user-info {
-             display: block;
-             padding: 5px 0;
-             .fa-icon {
-                 padding-right: 10px;
-             }
-             a {
-                 color: blue;
-             }
-         }
-     }
+    // プロフィール
+    .profile {
+        .user-icon {
+            background: url('https://images.ctfassets.net/eltkheefzhml/6yg7gaEKWciIjfuIOBCDdc/e3fefa1d20133b4b7935d31eed738c72/icon.png?h=250');
+            background-size: cover;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 2px solid #eee;
+            display: block;
+            width: 90px;
+            height: 90px;
+        }
+        ul {
+            padding-left: 15px;
+        }
+        .user-info {
+            display: block;
+            padding: 5px 0;
+            .fa-icon {
+                padding-right: 10px;
+            }
+            a {
+                color: blue;
+            }
+        }
+    }
 
-     // タグ
-     .tag-area {
-         padding: 15px 0;
-         .tag-btn {
-             margin: 5px;
-         }
-     }
+    // タグ
+    .tag-area {
+        padding: 15px 0;
+        .tag-btn {
+            margin: 5px;
+        }
+    }
 }
