@@ -40,6 +40,9 @@
             display: block;
             padding: 5px 0;
             .fa-icon {
+                width: 12px;
+                min-width: 12px;
+                height: 12px;
                 padding-right: 10px;
             }
             a {
