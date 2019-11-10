@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout.js';
+import SEO from '../components/SEO.js';
 import '../styles/main.scss';
 import '../styles/decoration.scss';
 
@@ -14,6 +15,10 @@ const Post = ( props ) => {
 
     return (
         <Layout>
+        <SEO 
+            title={post.title}
+            description={post.description}
+        />
             <div id="content">
             <Paper>
                 <div className="post-container">
@@ -47,6 +52,7 @@ export const query = graphql`
                     html
                 }
             }
+            description
         }
     }
 `

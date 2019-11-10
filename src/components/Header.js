@@ -5,7 +5,7 @@ import ('../styles/header.scss');
 const Header = ({ siteTitle }) => {
     return (
         <header>
-            <h1><Link to="/"><img src={withPrefix('/logo.png')} /></Link></h1>
+            <Link to="/"><img src={withPrefix('/logo.png')} /></Link>
         </header>
     )
 }

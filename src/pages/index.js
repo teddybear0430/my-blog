@@ -5,11 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 import Layout from '../components/Layout.js';
+import SEO from '../components/SEO.js';
 import '../styles/main.scss';
 
 const IndexPage = ({ data }) => {
     return (
         <Layout>
+        <SEO 
+            title={'チラ裏感覚で書くTech Blog'}
+            description={'エンジニアとしてやっていく上で作ったものや、詰まった事をまとめるためのブログです。チラ裏感覚での殴り書きが基本です。'}
+        />
         {
             data.allContentfulBlog.edges.map((edge, i) => {
                 const post = edge.node;
@@ -52,7 +57,7 @@ export const query = graphql`
                 createdAt(formatString: "YYYY/M/D")
                 content {
                     childMarkdownRemark {
-                        excerpt(truncate: true)
+                        excerpt(truncate: true, pruneLength: 80)
                     }
                 }
             }

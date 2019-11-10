@@ -4,11 +4,11 @@ const env = process.env;
 module.exports = {
     siteMetadata: {
         title: 'チラ裏感覚で書くTech Blog'
-
     },
     plugins: [
         `gatsby-plugin-sass`,
         `gatsby-transformer-remark`,
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-contentful`,
             options: {
