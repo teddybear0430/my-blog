@@ -21,19 +21,21 @@ const Tag = ( props ) => {
 
             return (
                     <div key={i} className="post-list">
-                    <h2 className="title">
-                    <Link to={`/posts/${post.slug}`}>{ post.title }</Link>
-                    </h2>
                     <span className="date">
                         { post.createdAt }
                         <FontAwesomeIcon className="edit-icon" icon={faEdit} />
                     </span>
+                    <h2 className="title">
+                    <Link to={`/posts/${post.slug}`}>{ post.title }</Link>
+                    </h2>
+                    <div className="tag-area">
                     {
                     post.tags.map((tag, i) =>
                             <span key={i} className="tag-btn btn">
                                 <Link to={ `/tag/${tag}` }>{ tag }</Link>
                             </span>
                     )}
+                    </div>
                     <p className="excerpt">{ post.content.childMarkdownRemark.excerpt }</p>
                     <Button className="read-more" size="small" variant="contained" color="secondary">
                         <Link to={ `/posts/${post.slug}` }>続きを読む</Link>

@@ -22,17 +22,19 @@ const Post = ( props ) => {
             <div id="content">
             <Paper>
                 <div className="post-container">
-                    <h1 className="post-title">{ post.title }</h1>
                     <span className="date">
                         { post.createdAt }
                         <FontAwesomeIcon className="edit-icon" icon={faEdit} />
                     </span>
+                    <h1 className="post-title">{ post.title }</h1>
+                    <div className="tag-area">
                     { 
                         post.tags.map((tag, i) => 
                             <span className="tag-btn btn" key={i}>
                                 <Link to={ `/tag/${tag}` }>{ tag }</Link>
                             </span>
                     )}
+                    </div>
                     <div className="entry-content" dangerouslySetInnerHTML={{ __html: contentHTML }} />
                 </div>
             </Paper>
