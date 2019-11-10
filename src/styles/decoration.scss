@@ -5,6 +5,8 @@
         font-size: 2rem;
     }
     .entry-content {
+        margin-top: 40px;
+        line-height: 190%;
         h2 {
             font-size: 1.5rem;
             border-left: 6px solid $key_color2;
@@ -16,6 +18,15 @@
             border-bottom: 2px solid $key_color1;
             padding-bottom: 5px;
             margin: 20px 0;
+        }
+        ul {
+            border: 2px solid #ddd;
+            padding: 0.6rem;
+            margin: 30px 0;
+            background: #f7f1f1;
+            li {
+                margin-left: 15px;
+            }
         }
         // コード部分
         .cord-frame {

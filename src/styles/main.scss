@@ -13,14 +13,17 @@ main {
         border-radius: 4px;
         background: $bg_color;
     }
-    .tag-btn {
-        @include btn($key_color2);
-        padding: 0.3rem;
-        font-size: 0.8rem;
-        margin-right: 5px;
-        cursor: pointer;
-        a {
-            color: #fff;
+    .tag-area {
+        margin: 15px 0;
+        .tag-btn {
+            @include btn($key_color2);
+            padding: 0.3rem;
+            font-size: 0.8rem;
+            margin-right: 12px;
+            cursor: pointer;
+            a {
+                color: #fff;
+            }
         }
     }
     .date {
@@ -31,8 +34,9 @@ main {
         font-weight: 600;
         .edit-icon {
             width: 16px;
-            min-width: 16px;
+            max-width: 16px;
             height: 16px;
+            max-height: 16px;
             margin-left: 10px;
             vertical-align: text-bottom;
         }
@@ -40,7 +44,7 @@ main {
 
     // 投稿一覧
     .post-list {
-        margin: 30px;
+        margin: 15px;
         padding: 0.6rem 0;
         border-bottom: 1px dashed $key_color1;
         @media (max-width: 980px) {
