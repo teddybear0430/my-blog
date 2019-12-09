@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Link from '@material-ui/core/Link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt,faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import ('../../styles/sidebar.scss');
@@ -40,7 +40,7 @@ const Profile = ( props ) => {
                 </span>
                 <span className="user-info">
                 <FontAwesomeIcon className="fa-icon" icon={faCodeBranch} />
-                    <Link to="https://github.com/Yota-K">
+                    <Link href="https://github.com/Yota-K">
                         https://github.com/Yota-K
                     </Link>
                 </span>
